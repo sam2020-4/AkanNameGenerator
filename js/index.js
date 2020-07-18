@@ -20,7 +20,14 @@ function getAkanName() {
     var femaleNames = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     
     // comparing the gender
-    
+    if (document.getElementById("gender").checked) {
+        var gender = 'male';
+      }
+      else{
+        var gender = 'female';
+      }
+
+    //
 
 
 
