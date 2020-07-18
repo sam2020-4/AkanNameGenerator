@@ -93,31 +93,17 @@
                     <input type="radio" name="gender" id="gender" value="female"> Female&emsp;
                 </div>
             </div>
-
+            <br>
+            <a href="#result"><button type="submit" name="button" class="btn btn-primary mb-2" onclick="getAkanName();">GetAkanName</button></a>&nbsp;
+            <button type="reset" onclick="clearMessage(); return false;" class="btn btn-success btn-xs">&nbsp;&nbsp;Cancel</button>
 
             <hr class="mt-2 mb-3 hh">
             <!-- RESULTS -->
             <h3>Display Results:</h3>
-            
-
-
-
-        </div>
-        
-        
-
-
-        <!-- <div class="jumbotron">
-            
-            
-            <div class="sbmt">
-            <a href="#result"><button type="button" name="Submit" class="btn btn-primary mb-2" onclick="getAkanName();">GetAkanName</button></a>
+            <div id="output">
+                <p id="finalResult"></p>
             </div>
-            <div id="last">
-            <p id="finalResult"></p>
-            </div>
-        </div> -->
-          
+        </div>              
         <!-- footer -->
         <footer class="page-footer font-small blue" id="footer">
             <!-- Copyright -->
