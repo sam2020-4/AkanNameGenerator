@@ -39,9 +39,11 @@ body{
 .welcome >h3{
     color: darkorange;
     text-decoration: underline;
-
 }
 
+.col-sm{
+    text-align: left;       
+}
 
 
 
