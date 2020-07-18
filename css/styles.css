@@ -13,9 +13,10 @@
 
 .main >h1{
     text-align: center;
-    color: orange;
+    color:white;
     text-transform: uppercase;
     padding: 50px;
+    font-weight: 600;
 } 
 
 
