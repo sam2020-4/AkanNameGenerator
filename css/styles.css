@@ -6,6 +6,7 @@ body{
     text-align: center;   
 }
 
+/* main page with image */
 .main{
     background-image: url('../images/Safe-Water-in-Northern-Ghana-702x336.jpg');
     background-size: cover;
@@ -22,6 +23,7 @@ body{
     font-weight: 600;
 } 
 
+/* content section */
 .welcome{
     padding: 20px;    
 }
@@ -47,11 +49,14 @@ body{
 }
 
 .fs11{
-    line-height: 3em;
+    line-height: 2em;
 }
 
 
 
+
+
+/* footer */
 #footer{
     background-color: rgb(104, 100, 100);
 }
