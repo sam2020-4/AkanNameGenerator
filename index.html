@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <h6>MALE NAMES</h6>
-                        <ul class="list">
+                        <ul class="fs11">
                             <li>Sunday: Kwasi</li>
                             <li>Monday: Kwadwo</li>
                             <li>Tuesday: Kwabena</li>
@@ -64,7 +64,7 @@
 
                     <div class="col-sm">
                         <h6>FEMALE NAMES</h6>
-                        <ul class="list">
+                        <ul class="fs11">
                             <li>Sunday: Akosua</li>
                             <li>Monday: Adwoa</li>
                             <li>Tuesday: Abenaa</li>
@@ -77,22 +77,42 @@
 
                     <div class="col-sm">
                         <h6>PLEASE ENTER YOUR BIRTHDATE HERE:</h6>
+                        <form action="">
+                            <div class="form-group mb-15">
+                                <label>Day</label><br>
+                                <input type="text" id="day" placeholder="dd" required><br>
+                                <label>Month</label><br>
+                                <input type="text" id="month" placeholder="mm" required><br>
+                                <label>Year</label><br>
+                                <input type="text" id="year" placeholder="yy" required><br>
+                            </div> 
+
+                            <div class="form-group mb-15">
+                                <label class="label">Gender</label>
+                                <div class="rdio rdio-default fs11">
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male">&nbsp;&nbsp;Male</label>
+                                </div>
+                                <div class="rdio rdio-default fs11">
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female">&nbsp;&nbsp;Female</label>
+                                </div>
+                            </div>
+                            <div class="sbmt">
+                                <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="submition();">Submit</button></a>
+                            </div>                     
+                        </form>
                     </div>
                 </div>
             </div>
 
-
-        
+            <!-- result display -->
+            <hr>
+				<div class="your-akan-name">
+					<p id="final" class="results">RESULTS HERE</p>
+				</div>               
         </div>
           
-
-
-
-        <!-- content // what the system does -->
-
-
-
-
         <!-- footer -->
         <footer class="page-footer font-small blue" id="footer">
             <!-- Copyright -->
