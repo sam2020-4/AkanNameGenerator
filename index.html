@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#welcome">Akan-Names</a>
                         </li>                  
                         <li class="nav-item">
-                            <a class="nav-link" href="">contacts</a>
+                            <a class="nav-link" href="#footer">contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
         <div class="jumbotron main">
             <h1>Name generator app!!</h1>
             <!-- <p>EJnjoy Our Work</p> -->
-            <p><a class="btn btn-primary btn-lg" href="#welcome" role="button">Start Generating</a></p>
+            <p><a class="btn btn-primary btn-lg" href="#birth" role="button">Start Generating</a></p>
         </div>
 
         <!-- welcome section // brief description of the website-->
@@ -45,7 +45,8 @@
             <h1>AKAN <span>Names</span></h1>
             <p>This ia a website that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
                 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
-            <!-- <br> -->
+                
+            <hr class="mt-2 mb-3 hh"><hr class="mt-2 mb-3 hh">            
             <h3>Below are some of the Ghanaian Names:</h3>
             <div class="container">
                 <div class="row">
@@ -59,9 +60,8 @@
                             <li>Thursday:  Yaw</li>
                             <li>Friday: Kofi</li>
                             <li>Saturday: Kwame</li>
-                        </ul>                    
+                        </ul>   
                     </div>
-
                     <div class="col-sm">
                         <h6>FEMALE NAMES</h6>
                         <ul class="fs11">
@@ -72,47 +72,51 @@
                             <li>Thursday:  Yaa</li>
                             <li>Friday: Afua</li>
                             <li>Saturday: Ama</li>
-                        </ul>                    
-                    </div>
-
-                    <div class="col-sm">
-                        <h6>PLEASE ENTER YOUR BIRTHDATE HERE:</h6>
-                        <form action="">
-                            <div class="form-group mb-15">
-                                <label>Day</label><br>
-                                <input type="text" id="day" placeholder="dd" required><br>
-                                <label>Month</label><br>
-                                <input type="text" id="month" placeholder="mm" required><br>
-                                <label>Year</label><br>
-                                <input type="text" id="year" placeholder="yy" required><br>
-                            </div> 
-
-                            <div class="form-group mb-15">
-                                <label class="label">Gender</label>
-                                <div class="rdio rdio-default fs11">
-                                    <input type="radio" name="gender" id="male" value="Male">
-                                    <label for="male">&nbsp;&nbsp;Male</label>
-                                </div>
-                                <div class="rdio rdio-default fs11">
-                                    <input type="radio" name="gender" id="female" value="Female">
-                                    <label for="female">&nbsp;&nbsp;Female</label>
-                                </div>
-                            </div>
-                            <div class="sbmt"> 
-                               <a href="#result"></a> <button type="submit" name="button" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs">&nbsp;&nbsp;Get Akan Name</button>
-			                    <button type="reset"  name="button" onclick="clear(); return false;" class="btn btn-success btn-xs">&nbsp;&nbsp;Cancel</button>
-                            </div>                     
-                        </form>
+                        </ul>    
                     </div>
                 </div>
             </div>
+            <hr class="mt-2 mb-3 hh">
+            <hr class="mt-2 mb-3 hh">
+            <!-- manupulation of data -->
+            <h4>ENTER YOUR DATE OF BIRTH HERE:</h4>
+            <div class="btn-group btn-group-lg" id="birth" role="group" aria-label="...">
+                <div class="form form-border">
+                    <label>Day</label>&emsp;
+                        <input type="text" id="day" placeholder="dd" maxlength="2" size="10" required>&emsp;
+                            <label>Month</label>&emsp;
+                                <input type="text" id="month" maxlength="2" size="10" placeholder="mm" required>&emsp;
+                                    <label>Year</label>&emsp;
+                                <input type="text" id="year" maxlength="4" size="10" placeholder="yy" required>&emsp;
+                            <label>Gender</label>&emsp;
+                        <input type="radio" name="gender" id="gender" value="male" checked> Male&emsp;
+                    <input type="radio" name="gender" id="gender" value="female"> Female&emsp;
+                </div>
+            </div>
 
-            <!-- result display -->
-            <hr>
-				<div class="your-akan-name">
-					<p id="final" class="result">RESULTS HERE</p>
-				</div>               
+
+            <hr class="mt-2 mb-3 hh">
+            <!-- RESULTS -->
+            <h3>Display Results:</h3>
+            
+
+
+
         </div>
+        
+        
+
+
+        <!-- <div class="jumbotron">
+            
+            
+            <div class="sbmt">
+            <a href="#result"><button type="button" name="Submit" class="btn btn-primary mb-2" onclick="getAkanName();">GetAkanName</button></a>
+            </div>
+            <div id="last">
+            <p id="finalResult"></p>
+            </div>
+        </div> -->
           
         <!-- footer -->
         <footer class="page-footer font-small blue" id="footer">
@@ -123,5 +127,6 @@
             <!-- Copyright -->      
         </footer>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

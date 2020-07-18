@@ -52,10 +52,15 @@ body{
     line-height: 2em;
 }
 
+.hh{
+border-top-color: rgb(211, 175, 15);
+}
 
-
-
-
+.form-border{
+    border: 2px solid darkorange;
+    border-radius: 4px;
+    padding: 3px;
+}
 /* footer */
 #footer{
     background-color: rgb(104, 100, 100);
