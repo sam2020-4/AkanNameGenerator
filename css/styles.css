@@ -32,7 +32,14 @@ body{
 }
 
 .welcome >p{
-    font-size: 20px;    
+    font-size: 20px;
+    line-height: 1.8em; 
+    letter-spacing: 2px;   
+}
+.welcome >h3{
+    color: darkorange;
+    text-decoration: underline;
+
 }
 
 
