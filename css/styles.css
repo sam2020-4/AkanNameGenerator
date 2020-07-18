@@ -1,7 +1,9 @@
-
+body{
+    color: plum;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .jumbotron{
-    text-align: center;
-   
+    text-align: center;   
 }
 
 .main{
@@ -18,6 +20,15 @@
     padding: 50px;
     font-weight: 600;
 } 
+
+.welcome{
+    padding: 20px;    
+}
+.welcome h1>span{
+    color: orange;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 
 
