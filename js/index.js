@@ -17,21 +17,11 @@ function getAkanName() {
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     
-    // function gender(){
-    //   var gender = document.getElementById("gender").innerHTML;
-    //   if(gender[0].checked == true){
-    //     var gender="male";
-    //   }
-    //   else if(gender[1].checked == true){
-    //     var gender ="female";
-    //   }
-    // }
-
-
+    // checking the gender
     if (document.getElementById("gender")) {
       var gender = 'male';
     }
-
+    
     if (document.getElementById("fgender")){
       var gender = 'female';
     }
@@ -46,6 +36,8 @@ function getAkanName() {
     else if (mm == 2 && dd > 29) {
       alert("invalid day of month")
     }
+
+    
 
     else if (Math.round(result) == 0 && gender === 'male') {
       document.getElementById("finalResult").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
