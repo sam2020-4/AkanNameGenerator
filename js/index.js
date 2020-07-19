@@ -16,16 +16,25 @@ function GetName() {
   
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    
-    // checking the gender
-    if (document.getElementById("gender")) {
+    if (document.getElementById("gender").checked) {
       var gender = 'male';
     }
-
-    if (document.getElementById("fgender")){
+    else{
       var gender = 'female';
     }
-
+    
+    // //get selected radio button
+    // function validate(form)
+    // {
+    //     var genderM=form.gender_male;
+    //     var genderF=form.gender_female;
+    
+    //     if(genderM.checked==false && genderF.checked==false ) {
+    //         alert("You must select male or female");
+    //         return false;
+    //     }   
+    // }
+    
     //validating date
     if (dd <= 0 || dd > 31) {
       alert("invalid date");
@@ -34,12 +43,35 @@ function GetName() {
       alert("invalid month");
     }
     else if (mm == 2 && dd > 29) {
-      alert("invalid day of month")
+      alert("invalid day of month");
+    }
+    else if (year <= 1900 || year > 2020) {
+      alert("Invalid Year");      
     }
 
-    
+    if (Math.round(result) == 0 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Sunday, your Akan name is " + femaleNames[0]);
+    }
+    else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Monday, your Akan Name is " + femaleNames[1]);
+    }
+    else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Tuesday, your Akan Name is " + femaleNames[2]);
+    }
+    else if (Math.round(result) == 3 || Math.round(result) == -3 && gender ==='female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Wednesday, your Akan Name is " + femaleNames[3]);
+    }
+    else if (Math.round(result) == 4 || Math.round(result) == -4 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Thursday, your Akan Name is " + femaleNames[4]);
+    }
+    else if (Math.round(result) == 5 || Math.round(result) == -5 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Friday, your Akan Name is " + femaleNames[5]);
+    }
+    else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === 'female') {
+      document.getElementById("finalResult").innerHTML = ("You were born on Saturday, your Akan Name is " + femaleNames[6]);
+    }
 
-    else if (Math.round(result) == 0 && gender === 'male') {
+     if (Math.round(result) == 0 && gender === 'male') {
       document.getElementById("finalResult").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
     }
     else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === 'male') {
@@ -59,28 +91,7 @@ function GetName() {
     }
     else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === 'male') {
       document.getElementById("finalResult").innerHTML = ("You were born on Saturday, your Akan Name is " + maleNames[6]);
-    }
-    else if (Math.round(result) == 0 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Sunday, your Akan name is " + femaleNames[0]);
-    }
-    else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Monday, your Akan Name is " + femaleNames[1]);
-    }
-    else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Tuesday, your Akan Name is " + femaleNames[2]);
-    }
-    else if (Math.round(result) == 3 || Math.round(result) == -3 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Wednesday, your Akan Name is " + femaleNames[3]);
-    }
-    else if (Math.round(result) == 4 || Math.round(result) == -4 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Thursday, your Akan Name is " + femaleNames[4]);
-    }
-    else if (Math.round(result) == 5 || Math.round(result) == -5 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Friday, your Akan Name is " + femaleNames[5]);
-    }
-    else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === 'female') {
-      document.getElementById("finalResult").innerHTML = ("You were born on Saturday, your Akan Name is " + femaleNames[6]);
-    }
+    }   
   
     else {
       alert("please input all data");

@@ -80,27 +80,28 @@
             <hr class="mt-2 mb-3 hh">
             <!-- manupulation of data -->
             <h4>ENTER YOUR DATE OF BIRTH HERE:</h4>
-            <div class="btn-group btn-group-lg" id="birth" role="group" aria-label="...">
-                <div class="form form-border">
-                    <label>Day</label>&emsp;
-                        <input type="text" id="day" placeholder="dd" maxlength="2" size="10" required>&emsp;
-                            <label>Month</label>&emsp;
-                                <input type="text" id="month" maxlength="2" size="10" placeholder="mm" required>&emsp;
-                                    <label>Year</label>&emsp;
-                                <input type="text" id="year" maxlength="4" size="10" placeholder="yy" required>&emsp;
-                            <label>Gender</label>&emsp;
-                        <input type="radio" name="gender" id="gender" value="male"> Male&emsp;
-                    <input type="radio" name="gender" id="fgender" value="female"> Female&emsp;
-                </div>
-            </div>
-            <br>
-            <button type="submit" name="button" class="btn btn-primary mb-2" onclick="GetName();">Get-Name</button>&nbsp;
-            <button type="reset" onclick="reset();" class="btn btn-success btn-xs">&nbsp;&nbsp;Reset</button>
+            <form class="form-border" id="birth">
+                <label for="day">DAY:</label>
+                <input type="text" id="day" maxlength="2" size="4" placeholder="dd" required>&emsp;
+              
+                <label for="month">MONTH:</label>
+                <input type="text" id="month" maxlength="2" size="4" placeholder="mm" required>&emsp;
 
+                <label for="year">YEAR:</label>
+                <input type="text" id="year" maxlength="4" size="4" placeholder="yy" required>&emsp;
+                
+                <label>GENDER:</label>&emsp;
+                <input type="radio" name="gender" id="gender" value="male" checked> Male&emsp;
+                <input type="radio" name="gender" id="gender" value="female" checked> Female<br>  
+
+                 <a href="#result"><button type="submit" value="Submit" onclick="GetName();" class="btn btn-primary mb-2">Get-Name</button></a>
+                <input type="reset" value="Reset" class="btn btn-primary mb-2">                
+            </form>                
+                      
             <hr class="mt-2 mb-3 hh">
             <!-- RESULTS -->
             <h3>Display Results:</h3>
-            <div id="output">
+            <div id="result">
                 <p id="finalResult"></p>
             </div>
         </div>              
