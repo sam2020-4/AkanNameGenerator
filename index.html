@@ -83,19 +83,19 @@
             <div class="btn-group btn-group-lg" id="birth" role="group" aria-label="...">
                 <div class="form form-border">
                     <label>Day</label>&emsp;
-                        <input type="text" id="day" placeholder="dd" maxlength="2" size="10" required>&emsp;
+                        <input type="number" id="day" placeholder="dd" maxlength="2" size="10" required>&emsp;
                             <label>Month</label>&emsp;
-                                <input type="text" id="month" maxlength="2" size="10" placeholder="mm" required>&emsp;
+                                <input type="number" id="month" maxlength="2" size="10" placeholder="mm" required>&emsp;
                                     <label>Year</label>&emsp;
-                                <input type="text" id="year" maxlength="4" size="10" placeholder="yy" required>&emsp;
+                                <input type="number" id="year" maxlength="4" size="10" placeholder="yy" required>&emsp;
                             <label>Gender</label>&emsp;
-                        <input type="radio" name="gender" id="gender" value="male" checked> Male&emsp;
-                    <input type="radio" name="gender" id="gender" value="female"> Female&emsp;
+                        <input type="radio" name="gender" id="gender" value="male"> Male&emsp;
+                    <input type="radio" name="gender" id="fgender" value="female"> Female&emsp;
                 </div>
             </div>
             <br>
             <a href="#result"><button type="submit" name="button" class="btn btn-primary mb-2" onclick="getAkanName();">GetAkanName</button></a>&nbsp;
-            <button type="reset" onclick="clearMessage(); return false;" class="btn btn-success btn-xs">&nbsp;&nbsp;Cancel</button>
+            <button type="reset" onclick="clearMessage();" class="btn btn-success btn-xs">&nbsp;&nbsp;Reset</button>
 
             <hr class="mt-2 mb-3 hh">
             <!-- RESULTS -->
