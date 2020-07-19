@@ -1,4 +1,4 @@
-function getAkanName() {
+function GetName() {
     /* declaration  and initialisation */
     var day = document.getElementById("day").value;
     var dd = parseInt(day);
@@ -21,7 +21,7 @@ function getAkanName() {
     if (document.getElementById("gender")) {
       var gender = 'male';
     }
-    
+
     if (document.getElementById("fgender")){
       var gender = 'female';
     }
