@@ -79,31 +79,32 @@
             <hr class="mt-2 mb-3 hh">
             <hr class="mt-2 mb-3 hh">
             <!-- manupulation of data -->
-            <h4>ENTER YOUR DATE OF BIRTH HERE:</h4>
-            <form class="form-border" id="birth">
-                <label for="day">DAY:</label>
-                <input type="text" id="day" maxlength="2" size="4" placeholder="dd" required>&emsp;
-              
-                <label for="month">MONTH:</label>
-                <input type="text" id="month" maxlength="2" size="4" placeholder="mm" required>&emsp;
-
-                <label for="year">YEAR:</label>
-                <input type="text" id="year" maxlength="4" size="4" placeholder="yy" required>&emsp;
+            <div class="form">    
+                <h4>ENTER YOUR DATE OF BIRTH HERE:</h4>
+                <form class="form-border" id="birth">
+                    <label for="day">DAY:</label>
+                    <input type="text" id="day" maxlength="2" size="4" placeholder="dd" required>&emsp;
                 
-                <label>GENDER:</label>&emsp;
-                <input type="radio" name="gender" id="gender" value="male" checked> Male&emsp;
-                <input type="radio" name="gender" id="gender" value="female" checked> Female<br>  
+                    <label for="month">MONTH:</label>
+                    <input type="text" id="month" maxlength="2" size="4" placeholder="mm" required>&emsp;
 
-                 <a href="#result"><button type="submit" value="Submit" onclick="GetName();" class="btn btn-primary mb-2">Get-Name</button></a>
-                <input type="reset" value="Reset" class="btn btn-primary mb-2">                
-            </form>                
-                      
-            <hr class="mt-2 mb-3 hh">
-            <!-- RESULTS -->
-            <h3>Display Results:</h3>
-            <div id="result">
-                <p id="finalResult"></p>
-            </div>
+                    <label for="year">YEAR:</label>
+                    <input type="text" id="year" maxlength="4" size="4" placeholder="yy" required>&emsp;
+                    
+                    <label>GENDER:</label>&emsp;
+                    <input type="radio" name="gender" id="gender" value="male" checked> Male&emsp;
+                    <input type="radio" name="gender" id="gender" value="female" checked> Female<br>  
+
+                </form>
+                <button type="submit" value="Submit" onclick="GetName();" class="btn btn-primary mb-2">Get-Name</button>
+                <hr class="mt-2 mb-3 hh">
+                <!-- RESULTS -->
+                <h3>Display Results:</h3>
+                <div id="output">
+                    <p id="finalResult"></p>
+                </div>                
+            </div>                    
+           
         </div>              
         <!-- footer -->
         <footer class="page-footer font-small blue" id="footer">

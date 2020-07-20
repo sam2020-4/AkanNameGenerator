@@ -16,6 +16,7 @@ function GetName() {
   
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
     if (document.getElementById("gender").checked) {
       var gender = 'male';
     }
@@ -23,18 +24,7 @@ function GetName() {
       var gender = 'female';
     }
     
-    // //get selected radio button
-    // function validate(form)
-    // {
-    //     var genderM=form.gender_male;
-    //     var genderF=form.gender_female;
-    
-    //     if(genderM.checked==false && genderF.checked==false ) {
-    //         alert("You must select male or female");
-    //         return false;
-    //     }   
-    // }
-    
+   
     //validating date
     if (dd <= 0 || dd > 31) {
       alert("invalid date");
